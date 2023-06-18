@@ -13,16 +13,18 @@ name = Mb1
 
 [SQLite]
 name = Binance.db
+
+[time]
+default_time = 20
 ```
 section `POSTGRES`:
-- настройки главный базы
-  
+- настройки базы Postgres
+
 section `bot`:
-- name - имя под которым, будет видны записи в базе postgres
+- name - имя под которым, будут видны записи в базе postgres
 
 section `SQLite`:
 - name - имя файла базы данных sqlite
 
-Файл `current_id.txt`:
-- ставим 0 если создаем базу с нуля
-- дальше файл не трогаем
+section `time`:
+- default_time - частота синхронизации Sqlite с Postgres
